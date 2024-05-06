@@ -31,8 +31,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             sudo yum -y update
-            sudo yum install -y apache2
-            sudo systemctl start apache2
-            sudo systemctl enable apache2
+            sudo yum install -y apache
+            sudo systemctl start apache
+            sudo systemctl enable apache
             cd home
             sudo mv * /var/www/html
