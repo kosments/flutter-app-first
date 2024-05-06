@@ -32,7 +32,7 @@ jobs:
           script: |
             sudo yum -y update
             sudo yum install -y apache
-            sudo systemctl start apache
-            sudo systemctl enable apache
+            sudo systemctl start httpd
+            sudo systemctl enable httpd
             cd home
             sudo mv * /var/www/html
