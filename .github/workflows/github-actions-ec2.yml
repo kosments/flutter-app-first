@@ -31,7 +31,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             sudo yum -y update
-            sudo yum install -y apache
+            sudo yum install -y httpd
             sudo systemctl start httpd
             sudo systemctl enable httpd
             cd home
